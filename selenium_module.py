@@ -1,5 +1,5 @@
 # selenium_module.py
-
+#Add path to directory for saved screenshots before running.
 from selenium import webdriver
 import datetime
 
@@ -16,6 +16,8 @@ class SeleniumHandler:
         self.root = root
         self.driver = None
         self.cycle_start_time = None
+
+
         #Add path to directory for saved screenshots
         self.screenshot_directory = "C:\\<......>\\Vector Mapping\\Vector Program\\png files 'Earth Study'" 
 
