@@ -17,7 +17,7 @@ class SeleniumHandler:
         self.driver = None
         self.cycle_start_time = None
         #Add path to directory for saved screenshots
-        self.screenshot_directory = "C:\\Users\\Transplant\\Desktop\\Vector Mapping\\Vector Program\\png files 'Earth Study'" 
+        self.screenshot_directory = "C:\\<......>\\Vector Mapping\\Vector Program\\png files 'Earth Study'" 
 
         self.logger = Logger("SeleniumHandler")
         self.screenshot_interval = 1 * 60  # 1 minute
@@ -33,11 +33,12 @@ class SeleniumHandler:
         self.current_link_index = 0
 
         # Initialize counters for each link
-        self.screenshot_counter_a = 5387
-        self.screenshot_counter_b = 5387
-        self.screenshot_counter_c = 5387
-        self.screenshot_counter_d = 5387
-        self.screenshot_counter_e = 5387
+        counter_start = 5387
+        self.screenshot_counter_a = counter_start
+        self.screenshot_counter_b = counter_start
+        self.screenshot_counter_c = counter_start
+        self.screenshot_counter_d = counter_start
+        self.screenshot_counter_e = counter_start
 
     def set_screenshot_interval(self, interval):
         self.screenshot_interval = interval
