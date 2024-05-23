@@ -1,6 +1,6 @@
 # gui_module.py
 
-# When we set up the logger.py module, it will provide logging functions that can be used to log various events, errors, or other relevant information. 
+#    When we set up the logger.py module, it will provide logging functions that can be used to log various events, errors, or other relevant information. 
 #    Once logger.py is established, we can then revisit modules like gui_module.py and selenium_module.py to integrate these logging functions.
 #    For instance, in the selenium_module.py code you referenced, the comment # Here, you can add the logging mechanism is a placeholder indicating where we might add a call to a logging function from logger.py to log the occurrence of a TimeoutException.
 #    By doing this, we ensure that all significant events, errors, and other relevant data are logged systematically across all modules. This approach provides a centralized way to handle logging and makes it easier to maintain and expand the codebase in the future.
@@ -18,7 +18,6 @@ class AutomaticScreenshotGUI:
         print("initializing environment CLASS: (__init__(self, root))")
         self.root = root
         self.selenium_handler = SeleniumHandler(self.root)
-        # print("   self.screenshot_counter value: ", self.selenium_handler.screenshot_counter)
         print("   self.screenshot_counter_a value: ", self.selenium_handler.screenshot_counter_a)
 
 
