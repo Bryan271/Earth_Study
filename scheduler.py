@@ -1,4 +1,10 @@
 # scheduler.py
+'''
+The scheduler runs in 5 minute increments before starting a new iteration loop. 
+This is to take a screenshot of each image every 60 seconds for a total of 5 seperate views.
+The views I have chosen update every 5 minutes. 
+You may need to adjust thes settings for different time structures if you like.
+'''
 import time
 from selenium_module import SeleniumHandler
 
