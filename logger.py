@@ -1,5 +1,12 @@
 # logger.py
 
+'''
+Logger helped identify when network connections or other variables occurred as I was developing this code.
+The logger allows you to quickly see what count the program is currently at, and which part of the 5 minute cycle the 
+image capture is working on. This was very helpful to figure out that NOAA weather sites did not perform well for my needs.
+'''
+
+
 import logging
 import os
 from logging.handlers import RotatingFileHandler
