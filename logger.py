@@ -1,9 +1,12 @@
 # logger.py
 
 '''
-Logger helped identify when network connections or other variables occurred as I was developing this code.
-The logger allows you to quickly see what count the program is currently at, and which part of the 5 minute cycle the 
-image capture is working on. This was very helpful to figure out that NOAA weather sites did not perform well for my needs.
+The Logger class provides a centralized logging mechanism for the Vector Mapping Prototype.
+It allows logging of various events, errors, and relevant information during the program's execution.
+The logger is designed to create a log directory if it doesn't exist and generates log files for each module.
+The log files are rotated based on a maximum size of 5 MB, and up to 3 backup files are maintained.
+The logger supports different log levels (info, warning, error, exception) and outputs the logs to both the console and the log files.
+By integrating this logger into other modules, such as gui_module.py and selenium_module.py, you can ensure consistent and organized logging throughout the application.
 '''
 
 
