@@ -8,12 +8,12 @@
 import tkinter as tk
 from gui_module import AutomaticScreenshotGUI
 
-# Create the main window
+# Creates the main window
 root = tk.Tk()
 root.title("Vector Mapping Prototype v1.1")
 print("root.title")
 
-# Create an instance of the GUI class
+# Creates an instance of the GUI class
 gui = AutomaticScreenshotGUI(root)
 print("gui")
 
